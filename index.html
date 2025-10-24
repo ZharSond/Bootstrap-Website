@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UAS Front End</title>
+
+    
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+</head>
+<body>
+    <!-- Navbar -->
+    <header>   
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container justify-content-center flex-column">
+                <a href="#" class="navbar-brand">
+                    <img src="https://i.imgur.com/w9ryfyh.png" alt="" height="65">
+                </a>
+              <!-- Memunculkan Humberger Menu, data-bs-target di hubungkan dengan id di Div yang bewah -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarUtama">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <!-- Div Utama, untuk nampung semua (kecuali logo) elemen di navbar -->
+              <div class="collapse navbar-collapse" id="navbarUtama">
+                <ul class="navbar-nav mx-auto">
+                  <li class="nav-item">
+                    <a href="" class="nav-link">Beranda</a>
+                  </li>
+  
+                  <!-- Dropdown Menu -->
+                  <li class="nav-item dropdown">
+                    <a
+                      href=""
+                      class="nav-link dropdown-toggle"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                    >
+                      Jurusan
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#" class="dropdown-item">Sistem Informasi</a></li>
+                      <li><a href="#" class="dropdown-item">Informatika</a></li>
+                      <li><a href="#" class="dropdown-item">Psikologi</a></li>
+                      <li><a href="#" class="dropdown-item">Desain Komunikasi Visual</a></li>
+                      <li><a href="#" class="dropdown-item">Akuntansi</a></li>
+                      <li><a href="#" class="dropdown-item">Management</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      href=""
+                      class="nav-link dropdown-toggle"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                    >
+                        Mahasiswa
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#" class="dropdown-item">Binusian 2027</a></li>
+                      <li><a href="#" class="dropdown-item">Binusian 2028</a></li>
+                    </ul>
+                  </li>
+                </ul>
+            </div>
+            </div>
+          </nav>
+    </header>
+
+    <main>
+        <!-- Carousel -->
+        <div
+          class="carousel slide carousel-fade mb-5"
+          id="mycarousel"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <!-- Carousel Aktif -->
+            <div class="carousel-item active">
+              <img
+                src="image/uiaaaa uiiaaa uaa.jpeg"
+                height="400"
+                alt="Picsum Random 2"
+                class="d-block w-100"
+              />
+              <div class="carousel-caption bg-dark rounded-3" style="--bs-bg-opacity: .45;">
+                <h5>Uiii aaaiuuu iiaa i</h5>
+                <p>Uiaaa aauuiii iiiuuuuaaaiiuu iiaiuu auuii</p>
+                <a href="" class="btn btn-primary">Baca Selengkapnya</a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="image/imajinasi.jpg"
+                height="400"
+                class="d-block w-100"
+                alt="Picsum Random 3"
+              />
+              <!-- Caption Carousel -->
+              <div class="carousel-caption bg-dark rounded-3" style="--bs-bg-opacity: .45;">
+                <h5>IMAJINASI</h5>
+                <p>
+                  Bikin website gampang kok, asal ada imajinasi dan niat.
+                </p>
+                <a href="#" class="btn btn-primary">Lihat Selengkapnya</a>
+              </div>
+            </div>
+  
+            <!-- Button Next -->
+            <button
+              class="carousel-control-next"
+              data-bs-slide="next"
+              data-bs-target="#mycarousel"
+            >
+              <span class="carousel-control-next-icon"></span>
+              <span class="visually-hidden">next</span>
+            </button>
+  
+            <!-- BUtton Prev -->
+            <button
+              class="carousel-control-prev"
+              data-bs-target="#mycarousel"
+              data-bs-slide="prev"
+            >
+              <span class="carousel-control-prev-icon"></span>
+              <span class="visually-hidden">Prev</span>
+            </button>
+  
+            <!-- Carousel Indicators -->
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                class="active"
+                data-bs-target="#mycarousel"
+                data-bs-slide-to="0"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#mycarousel"
+                data-bs-slide-to="1"
+              ></button>
+            </div>
+          </div>
+        </div>
+  
+
+        <!-- Card -->
+        <div class="container" id="Promo">
+            <div class="row p-3"> <!--Bagian Atas-->
+              <!-- Bagian1 -->
+              <div class="col md-4 pb-3">
+                <div class="card">
+                  <img src="image/jumboMAX.png" alt="Picsum 1" class="card-img-top"/>
+                  <div class="card-body">
+                    <h5 class="card-title">JUMBO</h5>
+                    <p class="card-text">Akhirnya ada Animasi lokal yang rame, bahkan jadi trending topic di media sosial.</p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <a href="#" class="btn btn-block btn-primary">Selengkapnya</a>
+                        </div>
+                        <div class="col-md-6">
+                            <p class="text-end">1 April 2025</p>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="card-footer">Berita</div>
+                </div>
+              </div>
+              <!-- Bagian2 -->
+              <div class="col md-4 pb-3">
+                <div class="card">
+                  <img
+                    src="image/nandodemoMAX.png"
+                    alt="Picsum 2"
+                    class="card-img-top"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Nando Demo</h5>
+                    <p class="card-text">"Dalam hal mengejar kebenaran, satu hal yang paling penting. Kau harus percaya"</p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <a href="#" class="btn btn-block btn-primary">Selengkapnya</a>
+                        </div>
+                        <div class="col-md-6">
+                            <p class="text-end">15 Maret 2025</p>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="card-footer">Berita</div>
+                </div>
+              </div>
+              <!-- Bagian3 -->
+              <div class="col md-4 pb-3">
+                <div class="card">
+                  <img
+                    src="image/RobloxMAX.png"
+                    alt="Picsum 3"
+                    class="card-img-top"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Roblox</h5>
+                    <p class="card-text">Mendaki gunung everest bersama teman, di roblox</p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <a href="#" class="btn btn-block btn-primary">Selengkapnya</a>
+                        </div>
+                        <div class="col-md-6">
+                            <p class="text-end">29 Mei 2025</p>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="card-footer"> Berita </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row px-3"> <!--Bagian bawah-->
+                <!-- Bagian4 -->
+                <div class="col md-4 pb-3"> 
+                  <div class="card">
+                    <img
+                      src="image/AURAFARM.png"
+                      alt="Picsum 4"
+                      class="card-img-top"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Aura Farming</h5>
+                      <p class="card-text">Budaya Indonesia mendunia coy, Paju Jalur jadi trend yang diikuti banyak orang di luar negeri.</p>
+                      <div class="row">
+                        <div class="col-md-6">
+                            <a href="#" class="btn btn-block btn-primary">Selengkapnya</a>
+                        </div>
+                        <div class="col-md-6">
+                            <p class="text-end">14 Feb 2025</p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card-footer">Artikel</div>
+                  </div>
+                </div>
+                <!-- Bagian5 -->
+                <div class="col md-4 pb-3">
+                    <div class="card">
+                      <img
+                        src="image/velocityMAX.png"
+                        alt="Picsum 5"
+                        class="card-img-top"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Bikin Velocity Yuk!</h5>
+                        <p class="card-text">Trend tiktok yang ga akan pernah ada habisnya. Dari yang muda, sampai yang tua bikin (karna terpaksa)</p>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <a href="#" class="btn btn-block btn-primary">Selengkapnya</a>
+                            </div>
+                            <div class="col-md-6">
+                                <p class="text-end">20 April 2023</p>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="card-footer">Artikel</div>
+                    </div>
+                  </div>
+                <!-- Bagian6 -->
+                <div class="col md-4 pb-3">
+                    <div class="card">
+                      <img
+                        src="image/denisMAX.png"
+                        alt="Picsum 6"
+                        class="card-img-top"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Dennis</h5>
+                        <p class="card-text">"Dit, Aaaaddiiit... Tolongin, Dittt..." Kalimat keramat, si Dennis yang hobinya nyusahin Adit</p>
+                        <p class="card-text"></p>
+                        <div class="row">
+                        <div class="col-md-6">
+                            <a href="#" class="btn btn-block btn-primary">Selengkapnya</a>
+                        </div>
+                        <div class="col-md-6">
+                            <p class="text-end">23 November 2023</p>
+                        </div>
+                    </div>
+                      </div>
+                      <div class="card-footer">Artikel</div>
+                    </div>
+                  </div>
+              </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+     <div class="container">
+        <footer class="row pt-3 mt-3">
+            <div class="col-md-5">
+                <h3 class="mb-3">SATU University</h3>
+                <p class="mb-2">Jl. BKR No.63, Ancol, Kec. Regol, Kota Bandung, Jawa Barat 40253</p>
+                <p class="mb-2">Matakuliah Pemograman Front End website</p>
+                <p class="mb-2">Sistem Informasi Semester 4</p>
+            </div>
+            <div class="col-md-2">
+                <h3 class="mb-3">Menu</h3>
+                <p class="mb-2"><a href="#" class="text-decoration-none">Beranda</a></p>
+                <p class="mb-2"><a href="#" class="text-decoration-none">Jurusan</a></p>
+                <p class="mb-2"><a href="#" class="text-decoration-none">Mahasiswa</a></p>
+            </div>
+            <div class="col-md-5">
+                <h5>Daftar Yuk!</h5>
+                <p>Ayo jadi bagian dari SATU University, dan nikmati kebahagiaannya</p>
+                <div class="row">
+                    <div class="col-md-7">
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Alamat Email">
+                    </div>
+                    <div class="col-md-4">
+                        <button type="submit" class="btn btn-primary">DAFTAR SEKARANG!!</button>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <footer class="row pt-1 my-2 border-top">
+            <div class="col-md-5">
+                <p>© 2029 Nara Saif. Create by Bootstrap</p>
+            </div>
+            <div class="col-md-6"></div>
+            <div class="col-md-1">
+                <a href=""><img src="https://i.imgur.com/w9ryfyh.png" alt="" height="48"></a>
+            </div>
+        </footer>
+    </div>
+
+
+
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</body>
+</html>
